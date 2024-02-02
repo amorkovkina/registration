@@ -11,7 +11,7 @@ echo "Заполните все поля";
 if($pass != $repeatpass) {
 echo "Пароли не совпадают";
 } else {
-$sql = "INSERT INTO `users` (login, pass, email) VALUES ('$login', '$pass',
+$sql = "INSERT INTO `users` (login, pass, email) VALUES ('$login', '$pass','$email')";
 if ($conn -> query($sql) === TRUE) {
 echo "Успешная регистрация";
 }
